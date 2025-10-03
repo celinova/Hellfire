@@ -1,0 +1,23 @@
+name: Build executable and Test
+
+on:
+    workflow_call:
+    push:
+        branches:
+            - '**'
+            - '!main'
+            - '!staging'
+
+jobs:
+    build-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out code
+              uses: actions/checkout@v3
+
+            - name: Cache Dependencies
+              uses: actions/cache@v3
+              with:
+                path: /.cache
+                key: something
+                

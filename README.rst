@@ -4,7 +4,7 @@ Hellfire
 .. image:: /assets/hellfire.png
    :align: center
 
-Ban tool designed to torch fendas, leaving a slight feeling of burnout. Logo by Jyezet. Download the latest release `here`_.
+Ban tool designed to torch raiders, leaving a slight feeling of burnout. Logo by Jyezet. Download the latest release `here`_.
 
 .. _here: https://github.com/Celinova/Overburn/releases/latest
 
@@ -13,25 +13,22 @@ Ban tool designed to torch fendas, leaving a slight feeling of burnout. Logo by 
 How it works
 -------------------
 
-Hellfire uses an HTML session using sweeze's NSDotPy library. Using this session, it will load the reports page and handle bans. To abide by NS rules, loading the reports page and banning are done manually. 
+Hellfire uses a Selenium session to make requests to the NationStates http site. Using this session, it will load the reports page and handle bans. To abide by NS rules, loading the reports page and banning are done manually. 
 
-**PLEASE NOTE** that if you log into a nation, it will stop functioning and you will have to manually input a login session. NSDotPy also uses the keyboard function, meaning it will work regardless if you are not on the tab of this script.
 
 Usage
 -----------------------
 
-Hellfire will ask for the nation name and its password of the nation you will be using to ban. 
+Hellfire will ask for the nation name and its password of the nation you will be using to ban. Then you can either click or set a keybind.
 
-Then just keep pressing enter.
+Then just keep pressing the assigned button.
 
-TO-DO
------------------------
 
-- [⭕] Set separate keybinds for re-logging and refresing the reports page, in case you happen to log in from another session.
-- [✔] Add a fancy logo
-- [⭕] fully integrate with nsdotpy to make the code cleaner, instead of calling the private methods directly from the session
-- [⭕] faster pageloads
-- [✔] keeps track of banned nations from the reports page so it doesn't have to iterate through already banned nations by other banners
-- [⭕] set priority for certain nations to be banned
-- [⭕] flask app for mobile users
-- [⭕] more coming ahead
+
+
+
+ps.
+
+ngl this wasn't really necesary. i'm a little sentimental about this script. i'll continue to update this however i feel like it. so it's staying up. 
+
+better than lying in the shitter, huh?
